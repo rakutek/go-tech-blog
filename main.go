@@ -109,7 +109,6 @@ func connectDB() *sqlx.DB {
 		// .env読めなかった場合の処理
 	}
 
-
 	dsn := os.Getenv("DSN")
 	db, err := sqlx.Open("mysql", dsn)
 	if err != nil {
